@@ -1,0 +1,5 @@
+# DELETE poista blogi
+
+DELETE http://localhost:3003/api/blogs/689275640e3ad9233860f90e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlciIsImlkIjoiNjg5Mjc0ZjBiZDQxN2IyZjNiZDI0ZmU0IiwiaWF0IjoxNzU0NDI5Mjk1LCJleHAiOjE3NTQ0MzI4OTV9.TIpxrqUhE2mxQ49As5nzu7dgg5pS__LiAVi4slo0a9I
+Content-Type: application/json

@@ -1,0 +1,11 @@
+# POST user
+
+POST http://localhost:3003/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlciIsImlkIjoiNjg5Mjc0ZjBiZDQxN2IyZjNiZDI0ZmU0IiwiaWF0IjoxNzU0NDI4NzUzLCJleHAiOjE3NTQ0MzIzNTN9.yvjx1pAaM3XX0L_Ai-JFrHz7wZxixLbN3akn2uZQ8z0
+Content-Type: application/json
+
+{
+  "username": "pave",
+  "name": "Paavo Niskanen",
+  "password": "salasana"
+}

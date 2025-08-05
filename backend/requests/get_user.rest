@@ -1,0 +1,5 @@
+# GET kaikki käyttäjät
+
+GET http://localhost:3003/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlciIsImlkIjoiNjg5Mjc0ZjBiZDQxN2IyZjNiZDI0ZmU0IiwiaWF0IjoxNzU0NDI5MjI5LCJleHAiOjE3NTQ0MzI4Mjl9.xojK9_zCgep9bfYE9H18NErQB__fq4z2FhvZjCJYT1k
+Content-Type: application/json

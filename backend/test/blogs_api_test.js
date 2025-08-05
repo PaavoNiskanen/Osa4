@@ -150,6 +150,23 @@ describe('Kun blogeja on jo tallennettu etukäteen', () => {
       const blogsAfter = await helper.blogsInDb()
       assert.strictEqual(blogsAfter.length, blogsBefore.length)
     })
+
+    test('blogin lisääminen ilman tokenia ei onnistu', async () => {
+      const newBlog = {
+        title: 'Ilman tokenia',
+        author: 'Hakkeri',
+        url: 'http://salainen.com',
+        likes: 1,
+      }
+    
+      await api
+        .post('/api/blogs')
+        .send(newBlog)
+        .expect(401)
+    
+      const blogsAtEnd = await helper.blogsInDb()
+      assert.strictEqual(blogsAtEnd.length, helper.initialBlogs().length)
+    })
   })
 
   test('Kaikki blogit palautetaan JSON-muodossa', async () => {
